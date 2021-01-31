@@ -21,7 +21,7 @@ function InfoBox({ title, isRed, isGrey, active, cases, total, ...props }) {
             isGrey && "infoBox__cases--grey"
           }`}
         >
-          {cases}
+          {props.isloading ? <i className="fa fa-cog fa-spin fa-fw" /> : cases}
         </h2>
 
         {/* Total Cases */}
